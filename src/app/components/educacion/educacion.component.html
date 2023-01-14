@@ -1,31 +1,27 @@
-<div class="row">
-    <h1>Educacion</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Educacion
-        </button>
-    </div>
-
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Educacion of educacion">
-                    <td>
-                        <h2>{{Educacion.nombreE}}</h2>
-                    </td>
-                    <td>{{Educacion.descripcionE}}</td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
+<div data-aos-once="true" data-aos-duration="1000" data-aos="fade-up" class="Certificaciones-afuera">
+    <h1>Certificaciones y Estudios</h1>
+    <button style="border: 1px solid white; margin-left: 10px;" type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        Agregar Educacion
+    </button>
 </div>
+
+    <div class="Certificaciones">
+        <div *ngFor="let Educacion of educacion" class="Conteiner-cards">
+            <div data-aos-once="true" data-aos-duration="2500" data-aos="fade-up" class="Borde">
+            <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{Educacion.nombreE}} </h5>
+                        <p class="card-text">{{Educacion.descripcionE}}</p>
+                        <img width="50px" src="https://icongr.am/fontawesome/certificate.svg?size=128&color=f2b140" alt="">
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 10px;" data-aos-once="true" data-aos-duration="2500" data-aos="fade-up" *ngIf="isLogged">
+                <button style="border: 1px solid black; margin-right: 5px;" class="btn btn-light"
+                    routerLink="/editedu/{{Educacion.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </div>
+        </div>
+    </div>

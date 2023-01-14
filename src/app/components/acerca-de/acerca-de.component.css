@@ -4,6 +4,7 @@
     color: white;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .Perfil-about {
@@ -17,6 +18,7 @@
     margin-top: 15px;
     text-align: center;
     border-bottom: 1px solid white;
+    border-radius: 5px;
     margin-left: 250px;
     margin-right: 250px;
 }
@@ -28,21 +30,21 @@
 }
 
 .Info-about h2{
-    font-size: 45px;
+    font-size: 40px;
     text-align: start;
     border-bottom: 1px solid white;
     margin-right: 300px;
 }
 
 .Info-about p{
-    font-size: 25px;
+    font-size: 24px;
     width: 70%;
 }
 
 .Perfil-img {
     margin-top: 15px !important;
     margin: auto;
-    width: 400px !important;
+    width: 450px !important;
     border-radius: 50%;
     border: 3px solid white;
 }

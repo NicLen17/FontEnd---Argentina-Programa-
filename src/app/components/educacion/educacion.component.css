@@ -1,9 +1,57 @@
-.row{
-    padding: 20px;
+.Certificaciones {
+    display: flex;
+    margin: auto;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    margin-bottom: 150px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 80%;
 }
-div{
-    background: #a1b5cb;
+
+.Conteiner-cards div {
+    flex-direction: row;
 }
-h1, h3{
-    display: inline;
+
+.card {
+    font-size: 15px;
+    width: 400px;
+    min-height: 200px;
+    height: 230px;
+    max-height: 100%;
+    padding: 1px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h5 {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+.Borde {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 200px;
+    height: 230px;
+    max-height: 100%;
+}
+
+.Certificaciones-afuera {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.Certificaciones-afuera h1 {
+    font-size: 40px;
+    color: white;
+    border-bottom: 1px solid white;
 }

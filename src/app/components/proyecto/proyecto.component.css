@@ -10,6 +10,7 @@
 .Conteiner-redes {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .Conteiner-redes a {

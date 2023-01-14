@@ -1,16 +1,13 @@
+<div data-aos-once="true" data-aos-duration="1000" data-aos="fade-right" class="Contenedor-tituloSK">
+    <h1 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">Tecnologias</h1>
+    <button style="border-color: white; margin-left: 10px;" type="button" routerLink="/newskill" class="btn btn-dark " *ngIf="isLogged">Nueva Tecnologia</button>
+</div>
 <div class="Conteiner-skill">
-
-
-    <div class="Contenedor-tituloSK">
-        <h1 style="margin-top: 20%;">Tecnologias aprendidas</h1>
-        <button style="border-color: white;" type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
-    </div>
-
-
-    <div class="circulo" *ngFor="let skill of skill">
-        <circle-progress 
+    <div data-aos-once="true" data-aos-duration="2200" data-aos="fade-up" class="circulo" *ngFor="let skill of skill">
+        <circle-progress
+        class="Tecnologias"
         [percent]="(skill.porcentaje)" 
-        [radius]="100" [imageSrc]="''" 
+        [radius]="90" [imageSrc]="''" 
         [title]="(skill.nombre)"
         [titleColor]="'#ffffff'"
         [showTitle]="true" 
@@ -24,12 +21,14 @@
         [outerStrokeColor]="'#ffffff'"
         [innerStrokeColor]="'#ffffff'" 
         [animation]="true" 
+        [responsive]="true"
+        [toFixed]="0"
+        [backgroundPadding]="5"
         [animationDuration]="400">
         </circle-progress>
-
-        <div>
+        <div style="margin-top: -60px;">
             <td *ngIf="isLogged">
-                <button style="border-radius: 50%; margin-right: 5px; margin-left: 52px;" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                <button style="border-radius: 50%; margin-right: 5px; margin-left: 15px;" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
                     <i class="bi bi-pencil-fill"></i></button>
             </td>
             <td *ngIf="isLogged">
