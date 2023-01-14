@@ -1,17 +1,18 @@
-<div class="row">
+<div class="Conteiner-skill">
 
-    <h1>Hard & Soft skills</h1>
-    <div class="col-lg-2">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+
+    <div class="Contenedor-tituloSK">
+        <h1 style="margin-top: 20%;">Tecnologias aprendidas</h1>
+        <button style="border-color: white;" type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
     </div>
 
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+    <div class="circulo" *ngFor="let skill of skill">
         <circle-progress 
         [percent]="(skill.porcentaje)" 
-        [radius]="90" [imageSrc]="''" 
+        [radius]="100" [imageSrc]="''" 
         [title]="(skill.nombre)"
-        [titleColor]="'#212F3C'"
+        [titleColor]="'#ffffff'"
         [showTitle]="true" 
         [showImage]="false" 
         [imageHeight]="70" 
@@ -20,19 +21,19 @@
         [showSubtitle]="false" 
         [outerStrokeWidth]="16" 
         [innerStrokeWidth]="2" 
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'" 
+        [outerStrokeColor]="'#ffffff'"
+        [innerStrokeColor]="'#ffffff'" 
         [animation]="true" 
-        [animationDuration]="600">
+        [animationDuration]="400">
         </circle-progress>
 
         <div>
             <td *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                <button style="border-radius: 50%; margin-right: 5px; margin-left: 52px;" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
                     <i class="bi bi-pencil-fill"></i></button>
             </td>
             <td *ngIf="isLogged">
-                <button class="btn btn-danger" (click)="delete(skill.id)">
+                <button style="border-radius: 50%; margin-left: 5px;" class="btn btn-danger" (click)="delete(skill.id)">
                     <i class="bi bi-trash-fill"></i></button>
             </td>
         </div>

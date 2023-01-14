@@ -1,10 +1,15 @@
-.row{
-    background-color: #a1b5cb;
-    padding: 20px;
+.Conteiner-skill{
+    background-color: #000000;
+    padding: 30px;
+    color: white;
+    display: flex;
 }
 
 .circulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
+}
+
+.Contenedor-tituloSK {
+    align-content: center !important;
+    justify-content: center !important;
 }

@@ -13,8 +13,8 @@ export const environment = {
     messagingSenderId: '296810421531',
   },
 
-  production: true,
-  URL: 'http://localhost:8080/'
+  production: false,
+  URL: 'https://backendap-foym.onrender.com/'
 };
 
 /*
