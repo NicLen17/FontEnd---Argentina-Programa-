@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '296810421531',
   },
   production: true,
-  URL: 'https://backendasdasp-foym.onrender.com/'
+  URL: 'https://backendap-foym.onrender.com/'
 };

@@ -14,7 +14,7 @@ export const environment = {
   },
 
   production: true,
-  URL: 'https://backendap-foym.onrender.com/'
+  URL: 'https://backendap-foym.onrender.com'
 };
 
 /*
