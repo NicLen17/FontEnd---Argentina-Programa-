@@ -9,7 +9,6 @@
 
 .Perfil-about {
     margin: auto;
-    margin: auto;
     width: 40%;
 }
 
@@ -17,10 +16,7 @@
     font-size: 40px;
     margin-top: 15px;
     text-align: center;
-    border-bottom: 1px solid white;
     border-radius: 5px;
-    margin-left: 250px;
-    margin-right: 250px;
 }
 
 .Info-about {
@@ -34,6 +30,7 @@
     text-align: start;
     border-bottom: 1px solid white;
     margin-right: 300px;
+    flex-wrap: wrap;
 }
 
 .Info-about p{
