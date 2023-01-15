@@ -1,15 +1,21 @@
 .About {
-    display: flex;
     margin-top: 100px;
     color: white;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
+.Cont-about {
+    display: flex;
+    margin-right: 250px;
+    margin-left: 250px;
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
 .Perfil-about {
-    margin: auto;
-    width: 40%;
+    width: 500px;
+    padding: 50px;
 }
 
 .Perfil-about h2 {
@@ -21,27 +27,27 @@
 
 .Info-about {
     margin-top: 80px;
-    width: 60%;
     text-align: center;
+    width: 500px;
 }
 
-.Info-about h2{
+.Info-about h2 {
     font-size: 40px;
     text-align: start;
     border-bottom: 1px solid white;
-    margin-right: 300px;
-    flex-wrap: wrap;
 }
 
-.Info-about p{
-    font-size: 24px;
-    width: 70%;
+.Info-about p {
+    font-size: 23px;
+
 }
 
 .Perfil-img {
     margin-top: 15px !important;
     margin: auto;
-    width: 450px !important;
+    width: 300px !important;
     border-radius: 50%;
     border: 3px solid white;
+    -webkit-box-shadow: 0px 2px 13px 4px rgba(255, 255, 255, 0.57);
+    box-shadow: 0px 2px 13px 4px rgba(255, 255, 255, 0.57);
 }

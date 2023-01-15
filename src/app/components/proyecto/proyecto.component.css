@@ -9,7 +9,6 @@
 
 .Conteiner-redes {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -21,7 +20,6 @@
     color: black;
     width: 150px !important;
     border-radius: 75px;
-    box-shadow: 0 20 35 rgba(0,0,0,0.3);
     transition: 0.3s;
     overflow: hidden;;
 }
@@ -30,11 +28,10 @@
     -webkit-box-shadow: 2px 50px 50px -23px rgba(255,255,255,0.50); 
     box-shadow: 2px 50px 50px -23px rgba(255,255,255,0.50);
     transform: scale(1.1);
-    
 }
 
 .divisor {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-right: 150px;
     margin-left: 150px;
     border-top: white solid 2px;

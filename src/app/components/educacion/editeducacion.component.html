@@ -1,19 +1,41 @@
-<div class="container" *ngIf="educacion">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE">Nombre de la institucion</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="educacion.nombreE" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE">Descripcion de sus estudios</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
-                </div>
-                <button class="btn btn-primary">
-                    Editar educacion
-                </button>
-            </form>
-        </div>
-    </div>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <button style="margin-top: 250px; background-color: black; border: 1px solid white; width: 300px; height: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        EDITAR CERTIFICADO
+    </button>
 </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Certificado</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container" *ngIf="educacion">
+                <div class="row">
+                    <div>
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                            <div class="form-group">
+                                <label for="nombreE">Nombre de la institucion</label>
+                                <input style="border: 1px solid black;" type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="educacion.nombreE" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionE">Descripcion de sus estudios</label>
+                                <input style="border: 1px solid black;" type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
+                            </div>
+                            <button style="background-color: black; border: 1px solid white;" data-bs-dismiss="modal" class="btn btn-primary">
+                                Editar educacion
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="background-color: black; border: 1px solid white;" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
