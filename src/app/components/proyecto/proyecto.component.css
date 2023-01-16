@@ -10,6 +10,8 @@
 .Conteiner-redes {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
 }
 
 .Conteiner-redes a {
@@ -21,7 +23,6 @@
     width: 150px !important;
     border-radius: 75px;
     transition: 0.3s;
-    overflow: hidden;;
 }
 
 .Red-item:hover {

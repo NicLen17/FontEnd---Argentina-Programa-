@@ -1,14 +1,11 @@
 .About {
     margin-top: 100px;
     color: white;
-    justify-content: space-between;
     margin-bottom: 50px;
 }
 
 .Cont-about {
     display: flex;
-    margin-right: 250px;
-    margin-left: 250px;
     flex-wrap: wrap !important;
     justify-content: center;
 }

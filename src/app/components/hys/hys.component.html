@@ -1,41 +1,22 @@
-<div id="tec"  data-aos-once="true" data-aos-duration="1000" data-aos="fade-right" class="Contenedor-tituloSK">
+<div id="tec" data-aos-once="true" data-aos-duration="1000" data-aos="fade-right" class="Contenedor-tituloSK">
     <h1 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">Tecnologias</h1>
-    <button style="border-color: white; margin-left: 10px;" type="button" routerLink="/newskill" class="btn btn-dark " *ngIf="isLogged">Nueva Tecnologia</button>
+    <button style="border-color: white; margin-left: 10px;" type="button" routerLink="/newskill" class="btn btn-dark "
+        *ngIf="isLogged">Nueva Tecnologia</button>
 </div>
 <div class="Conteiner-skill">
     <div data-aos-once="true" data-aos-duration="2200" data-aos="fade-up" class="circulo" *ngFor="let skill of skill">
-        <circle-progress
-        class="Tecnologias"
-        [percent]="(skill.porcentaje)" 
-        [radius]="90" [imageSrc]="''" 
-        [title]="(skill.nombre)"
-        [titleColor]="'#ffffff'"
-        [showTitle]="true" 
-        [showImage]="false" 
-        [imageHeight]="70" 
-        [imageWidth]="70" 
-        [showUnits]="false"
-        [showSubtitle]="false" 
-        [outerStrokeWidth]="16" 
-        [innerStrokeWidth]="2" 
-        [outerStrokeColor]="'#ffffff'"
-        [innerStrokeColor]="'#ffffff'" 
-        [animation]="true" 
-        [responsive]="true"
-        [toFixed]="0"
-        [backgroundPadding]="5"
-        [animationDuration]="400">
-        </circle-progress>
-        <div style="margin-top: -60px;">
-            <td *ngIf="isLogged">
-                <button style="border-radius: 50%; margin-right: 5px; margin-left: 15px;" class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-                    <i class="bi bi-pencil-fill"></i></button>
-            </td>
-            <td *ngIf="isLogged">
-                <button style="border-radius: 50%; margin-left: 5px;" class="btn btn-danger" (click)="delete(skill.id)">
-                    <i class="bi bi-trash-fill"></i></button>
-            </td>
+        <div *ngIf="isLogged" class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-light"
+                routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash-fill"></i></button>
         </div>
-        
+        <circle-progress [percent]="(skill.porcentaje)" [radius]="90" [imageSrc]="''" [title]="(skill.nombre)"
+            [titleColor]="'#ffffff'" [showTitle]="true" [showImage]="false" [imageHeight]="70" [imageWidth]="70"
+            [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#ffffff'" [innerStrokeColor]="'#ffffff'" [animation]="true" [responsive]="true"
+            [toFixed]="0" [backgroundPadding]="5" [animationDuration]="400">
+        </circle-progress>
     </div>
 </div>
